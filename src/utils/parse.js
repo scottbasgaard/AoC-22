@@ -6,20 +6,14 @@ const parse = (path) => {
 
     const rl = readline.createInterface({
         input,
-        crlfDelay: Infinity
+        crlfDelay: Infinity,
     });
 
     return new Promise((resolve, reject) => {
-        const elves = [];
-        let elf = 0;
+        const lines = [];
 
         rl.on('line', (line) => {
-            if (line !== '') {
-                elf += parseInt(line, 10);
-            } else {
-                elves.push(elf);
-                elf = 0;
-            }
+            lines.push(line);
         });
 
         rl.on('error', (err) => {
@@ -27,7 +21,7 @@ const parse = (path) => {
         });
 
         rl.on('close', () => {
-            resolve(elves);
+            resolve(lines);
         });
     });
 };

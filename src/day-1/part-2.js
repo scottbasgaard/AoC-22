@@ -1,9 +1,9 @@
-import parse from '../utils/parse.js'; // eslint-disable-line import/extensions
-import timer from '../utils/timer.js'; // eslint-disable-line import/extensions
+import parse from '../utils/parse.js';
+import timer from '../utils/timer.js';
 
-import { calories } from './calories.js'; // eslint-disable-line import/extensions
+import { calories } from './calories.js';
 
-console.time('Time'); // eslint-disable-line no-console
+console.time('Time');
 
 const FILEPATH = './src/day-1/data/input.txt';
 
@@ -16,9 +16,9 @@ export const solve = (lines) =>
 parse(FILEPATH)
     .then(solve)
     .then(timer)
-    .then((result) => console.log(result)) // eslint-disable-line no-console
+    .then((result) => console.log(result))
     .catch((err) => {
-        console.error(err); // eslint-disable-line no-console
+        console.error(err);
     });
 
 export default solve;

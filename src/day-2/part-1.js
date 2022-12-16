@@ -1,9 +1,9 @@
-import parse from '../utils/parse.js'; // eslint-disable-line import/extensions
-import timer from '../utils/timer.js'; // eslint-disable-line import/extensions
+import parse from '../utils/parse.js';
+import timer from '../utils/timer.js';
 
-import { mapMove, getScore } from './rock-paper-scissors.js'; // eslint-disable-line import/extensions
+import { mapMove, getScore } from './tournament.js';
 
-console.time('Time'); // eslint-disable-line no-console
+console.time('Time');
 
 const FILEPATH = './src/day-2/data/input.txt';
 
@@ -23,9 +23,9 @@ export const solve = (lines) =>
 parse(FILEPATH)
     .then(solve)
     .then(timer)
-    .then((result) => console.log(result)) // eslint-disable-line no-console
+    .then((result) => console.log(result))
     .catch((err) => {
-        console.error(err); // eslint-disable-line no-console
+        console.error(err);
     });
 
 export default solve;

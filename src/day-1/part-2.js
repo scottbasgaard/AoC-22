@@ -1,7 +1,7 @@
 import parse from '../utils/parse.js';
 import timer from '../utils/timer.js';
 
-import { calories } from './calories.js';
+import { calories } from './helpers.js';
 
 console.time('Time');
 

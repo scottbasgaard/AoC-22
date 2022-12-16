@@ -1,7 +1,7 @@
 import parse from '../utils/parse.js';
 import timer from '../utils/timer.js';
 
-import { mapMove, getScore } from './tournament.js';
+import { mapMove, getScore } from './helpers.js';
 
 console.time('Time');
 

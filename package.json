@@ -16,6 +16,8 @@
         "day-4-2": "node src/day-4/part-2.js",
         "day-5-1": "node src/day-5/part-1.js",
         "day-5-2": "node src/day-5/part-2.js",
+        "day-6-1": "node src/day-6/part-1.js",
+        "day-6-2": "node src/day-6/part-2.js",
         "lint": "eslint ./src",
         "pretest": "npm run lint",
         "test": "node --experimental-vm-modules ./node_modules/.bin/jest"

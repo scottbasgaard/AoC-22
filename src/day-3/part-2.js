@@ -1,9 +1,9 @@
 import parse from '../utils/parse.js';
 import timer from '../utils/timer.js';
 
-console.time('Time');
+import { getPriority, findBadges } from './helpers.js';
 
-import { getPriority, findBadges } from './priorities.js';
+console.time('Time');
 
 const FILEPATH = './src/day-3/data/input.txt';
 

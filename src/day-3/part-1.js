@@ -1,7 +1,7 @@
 import parse from '../utils/parse.js';
 import timer from '../utils/timer.js';
 
-import { getPriority } from './priorities.js';
+import { getPriority } from './helpers.js';
 
 console.time('Time');
 
